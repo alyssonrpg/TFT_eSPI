@@ -36,6 +36,7 @@
     writedata(0x00);
     writedata(0x00);
 
+/*
     writecommand(0xE0);
     writedata(0x0F);
     writedata(0x1F);
@@ -69,6 +70,7 @@
     writedata(0x24);
     writedata(0x20);
     writedata(0x00);
+*/
  
     #if defined (TFT_PARALLEL_8_BIT) || defined (TFT_PARALLEL_16_BIT) || defined (RPI_DISPLAY_TYPE)
       writecommand(TFT_INVOFF);

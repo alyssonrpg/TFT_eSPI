@@ -15,11 +15,11 @@
 
     #define TFT_MISO  1
     #define TFT_MOSI  2
-    #define TFT_SCLK  3
-    #define TFT_DC    4    
-    #define TFT_CS    7   
-    #define TFT_RST   8   
-    #define TOUCH_CS  9 
+    #define TFT_SCLK  4
+    #define TFT_DC    5    
+    #define TFT_CS    6   
+    #define TFT_RST   7   
+    #define TOUCH_CS  8 
 
     #define LOAD_GLCD
     #define LOAD_FONT2
