@@ -13,13 +13,23 @@
     #define RPI_DISPLAY_TYPE
     #define ILI9486_DRIVER
 
-    #define TFT_MISO  1
-    #define TFT_MOSI  2
-    #define TFT_SCLK  4
-    #define TFT_DC    5    
-    #define TFT_CS    6   
-    #define TFT_RST   7   
-    #define TOUCH_CS  8 
+    #ifdef ESP32_S3_ZERO
+        #define TFT_MISO  1
+        #define TFT_MOSI  2
+        #define TFT_SCLK  4
+        #define TFT_DC    5    
+        #define TFT_CS    6   
+        #define TFT_RST   7   
+        #define TOUCH_CS  8 
+    #elif ESP32_S3_GRANDE
+        #define TFT_MISO  13
+        #define TFT_MOSI  12
+        #define TFT_SCLK  11
+        #define TFT_DC    10    
+        #define TFT_CS    9   
+        #define TFT_RST   8   
+        #define TOUCH_CS  18         
+    #endif
 
     #define LOAD_GLCD
     #define LOAD_FONT2
